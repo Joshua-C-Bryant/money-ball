@@ -6,7 +6,7 @@ Given that we had 2 days on this project, I'm happy with what I learned along th
 
 # Executive Summary
 
-- I acquired in the NBA data from Kaggle: https://www.kaggle.com/nathanlauga/nba-games
+- I acquired the NBA data from Kaggle: https://www.kaggle.com/nathanlauga/nba-games
 
 - I used seasons 2013 - 2019, knowing I wanted to use the 2018-2019 season as my test set. 2019-2020 was suspended due to covid resumed in the bubble, and 2020-2021 was shortened
 
