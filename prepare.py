@@ -1,5 +1,7 @@
 import pandas as pd
 import numpy as np
+from sklearn.metrics import mean_squared_error, explained_variance_score
+
 
 def clean_games_data(games):
     # Dropping HOME_TEAM_ID and VISITOR_TEAM_ID since their numbers 
@@ -147,3 +149,33 @@ def label_teams_away(df):
         return 'CHA'
     return 'Other'
 
+def get_team_labels(df):
+    df['home_team'] = df.apply(lambda df: label_teams_home(df), axis=1)
+    df['away_team'] = df.apply(lambda df: label_teams_away(df), axis=1)
+    return df
+
+# this function creates my metric_df to compare my models RMSE
+def make_metric_df(y, y_pred, model_name, metric_df):
+    if metric_df.size ==0:
+        metric_df = pd.DataFrame(data=[
+            {
+                'model': model_name, 
+                'RMSE_validate': mean_squared_error(
+                    y,
+                    y_pred) ** .5,
+                'r^2_validate': explained_variance_score(
+                    y,
+                    y_pred)
+            }])
+        return metric_df
+    else:
+        return metric_df.append(
+            {
+                'model': model_name, 
+                'RMSE_validate': mean_squared_error(
+                    y,
+                    y_pred) ** .5,
+                'r^2_validate': explained_variance_score(
+                    y,
+                    y_pred)
+            }, ignore_index=True)
