@@ -217,3 +217,9 @@ def plot_swarm_grid_with_color(train, target, cat_vars, quant_vars):
             ax[i].set_ylabel(quant)
             ax[i].set_title(cat)
         plt.show()
+
+def corr_heatmap(train): 
+# Make a heatmap that shows correlation of spurs_score and other variables
+    plt.figure(figsize=(8, 12))
+    heatmap = sns.heatmap(train.corr()[['spurs_score']].sort_values(by='spurs_score',ascending=False), vmin=-1, vmax=1, annot=True, cmap='Greens')
+    heatmap.set_title('Correlation of Features with spurs_score', fontdict={'fontsize':18}, pad=16);
