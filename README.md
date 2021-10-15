@@ -79,12 +79,12 @@ Features engineered:
     - LassoLars
     - Tweedie Regressor
     - Polynomial Regression
-- Evaluation
-    Mean Baseline RMSE: 10.615598
-    RMSE for Lasso + Lars
-    Training/In-Sample:  10.615597610059444 
-    Validation/Out-of-Sample:  11.163917076482761 
-    Test/Out-of-Sample:  14.586886040827023
+Evaluation
+- Mean Baseline RMSE: 10.615598
+- RMSE for Lasso + Lars
+    - Training/In-Sample:  10.615597610059444 
+    - Validation/Out-of-Sample:  11.163917076482761 
+    - Test/Out-of-Sample:  14.586886040827023
 
 # How to Reproduce This Project:
 You will need to download the CSV's from this data set here: https://www.kaggle.com/nathanlauga/nba-games
