@@ -2,7 +2,7 @@
 
 My ORIGINAL goal for this project was originally to predict the total score of each NBA game throughout the season! However, after doing some research on similar projects, I realized I may not have the most effective tools/skills available to me right now. I definitely look forward to expanding on this project and eventually predict every game's total point outcome.
 
-Given that we had 2 days on this project, I'm happy with what I learned along the way. No, I definitely won't be taking this model to Vegas anytime soon, but I know I'll get better over time and implement new techniques.
+Given the time that we did have on this project, I'm happy with what I learned along the way. No, I definitely won't be taking this model to Vegas anytime soon, but I know I'll get better over time and implement new techniques.
 
 # Executive Summary
 
